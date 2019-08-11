@@ -1,23 +1,26 @@
-var gulp = require("gulp");
-var less = require("gulp-less");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var minify = require("gulp-csso");
-var rename = require("gulp-rename");
-var posthtml = require("gulp-posthtml");
-var server = require("browser-sync").create();
-var run = require("run-sequence");
-var del = require("del");
+var gulp      = require("gulp");
+var less      = require("gulp-less");
+var plumber   = require("gulp-plumber");
+var postcss   = require("gulp-postcss");
+var autoprefixer  = require("autoprefixer");
+var minify    = require("gulp-csso");
+var rename    = require("gulp-rename");
+var posthtml  = require("gulp-posthtml");
+var server    = require("browser-sync").create();
+var run       = require("run-sequence");
+var del       = require("del");
+var concat    = require("gulp-concat");
+var uglify    = require("gulp-uglify");
 
 
 gulp.task("style", function () {
-  gulp.src("source/less/*.less")
+  return gulp.src("source/less/*.less")
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(concat("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
@@ -25,18 +28,14 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
-/*
-gulp.task("watch", function () {
-  gulp.watch("source/less/*.less")
-});*/
 
 gulp.task("serve", function () {
   server.init({
-    server: "build/"
+    server: "build"
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html", ["html"])
+  gulp.watch("source/less/*.less", ["style"]);
+  gulp.watch("source/*.html" ["html"])
     .on("change", server.reload);
 });
 
@@ -44,7 +43,7 @@ gulp.task("serve", function () {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml())
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
 });
 
 gulp.task("build", function (done) {
