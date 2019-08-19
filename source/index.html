@@ -11,12 +11,20 @@
     
     <header class="page__header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle toggle-on" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo" href="">
-            <img src="img/mishka-logo-mobile.png" alt="Логотип магазина">
-          </a>
-          <ul class="main-nav__list site-list">
+          <div class="logo-block">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png" sizes="100vw">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.png" sizes="100vw">
+                  <img class="page-header__logo-image" src="img/logotype-mobile.png" 
+                    width="186" height="35" alt="Магазин Мишка">
+              </picture>
+            </a>
+          </div>
+          
+          <ul class="main-nav__list site-list-closed">
             <li class="main-nav__item">
               <a class="item__link" href="#">Каталог товаров</a>
             </li>
@@ -31,7 +39,27 @@
             </li>
           </ul>
         </div>
-        <span class="close"></span>
+
+        <div class="add-wrapper">
+          <ul class="add-list">
+            <li class="add-list__item desktop-off">
+              <a class="add-list__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="add-list__item desktop-off">
+              <a class="add-list__link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="add-list__item tablet-off">
+              <a class="add-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="add-list__item tablet-off">
+              <a class="add-list__link" href="#">Распродажа</a>
+            </li>
+            <li class="add-list__item delivery">
+              <a class="add-list__link" href="#">Бесплатная доставка по РБ</a>
+            </li>
+          </ul>
+        </div>
+        <span class="close close-off"></span>
       </nav>
     </header>
 
@@ -206,6 +234,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
 
   </body>
 </html>
