@@ -52,6 +52,7 @@
 
 .logo-block,
 .main-nav__wrapper,
+.list__wrapper,
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -65,12 +66,19 @@
   border-bottom: 1px solid #ececec;
 }
 
+
+.list__wrapper {
+  flex-flow: column nowrap;
+
+  width: 100%;
+}
+
 .site-list-closed {
   display: none;
 }
 
 .site-list-opened {
-  display: block;
+  display: flex;
 }
 
 .logo-block,
@@ -104,6 +112,7 @@
   width: 86px;
   height: 35px;
 }
+
 
 .main-nav__item {
   text-align: left;
@@ -239,24 +248,45 @@
     border: 1px dashed blue;
   }
 
-  .main-nav__list {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-
   .main-nav__logo img {
     width: 113px;
     height: 46px;
   }
 
+  
   .logo-block,
   .main-nav__item {
     height: 89px;
 }
 
+
+.list__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-flow: row nowrap;
+
+  border: 1px dashed greenyellow;
+
+}
+
+  .main-nav__list--part-1 {
+    justify-content: flex-start;
+  }
+
+  .main-nav__list--part-2 {
+    justify-content: flex-end;
+  }
+
   .main-nav__item {
     display: none;
-    border: none;
+    width: 185px;
+
+    border: 1px dashed red;
   }
 
   .search-item,
@@ -274,11 +304,11 @@
 
   .cart-item {
     width: 265px;
-    text-align: right;
   }
 
   .cart-item .item__link {
     justify-content: flex-end;
+    width: 100%;
     border: 1px dashed green;
   }
 
@@ -332,6 +362,9 @@
     }
   }
 
+  .close-on {
+    display: none;
+  }
 }
 
 
@@ -359,15 +392,18 @@
     height: 72px;
   }
 
-  .main-nav__list {
-
-    width: 100%;
-    border: 1px dashed red;
+  .main-nav__list--part-2 {
+    justify-content: space-around;
   }
 
   .main-nav__item {
+    display: flex;
+  }
 
-    &:first-child .item__link {
+  .main-nav__list--part-1 .main-nav__item:first-child {
+    margin-right: 35px;
+    
+    & .item__link {
       border-right: 1px solid #ececec;
     }
   }
@@ -385,11 +421,6 @@
   }
 
 
-  .search-item,
-  .cart-item {
-    display: flex;
-  }
-
   .search-item {
     width: 82px;
 
@@ -398,9 +429,6 @@
     border-right: 1px solid #ececec;
   }
 
-
-
-  
   .add-list {
     margin: 0 50px;
   }
