@@ -157,14 +157,14 @@
     flex-flow: row nowrap;
     justify-content: stretch;
     align-items: flex-end;
+
+    box-sizing: border-box;
   }
   
   .prodaction__item {
-    width: 334px;
+    width: 50%;
     height: 119px;
-  
-    box-sizing: border-box;
-
+    
     &:hover {
       height: 124px;
     }
@@ -200,7 +200,7 @@
   }
 
   .prodaction__item {
-    width: 525px;
+    width: calc(50% - 50px);
   }
 }
 

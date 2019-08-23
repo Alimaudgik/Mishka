@@ -1,0 +1,82 @@
+@green-light: #63d1bb;
+@white: #ffffff;
+@greyfont: #444444;
+
+.page-main__content {
+  margin: 0;
+  padding: 35px 30px;
+
+  background-color: #ffffff;
+
+  & * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.content__data {
+  position: relative;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+
+  text-align: left;
+}
+
+.content__title {
+  display: flex;
+  flex-flow: column nowrap;
+  
+  margin-bottom: 30px;
+
+  border: 1px dashed red;
+}
+
+.title__item {
+  margin-bottom: 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.title__best-week {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  
+  text-transform: uppercase;
+  color: @green-light;
+}
+
+.content__info {
+  margin-bottom: 30px;
+
+  border: 1px dashed grey;
+
+  line-height: 24px;
+  color: @greyfont;
+}
+
+.content__text {
+  margin-bottom: 30px;
+}
+
+.content__table {
+  width: 100%;
+}
+
+.table__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #ececec;
+}
+
+.item__name {
+  width: 100px;
+}
