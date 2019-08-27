@@ -41,11 +41,17 @@
 }
 
 .item__image {
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+  width: 55px;
+  height:  37px;
+  
 
   border: 1px dashed red;
 }
-
+/*
 .flower {
   width: 32px;
   height: 37px;  
@@ -69,7 +75,7 @@
 .present {
   width: 33px;
   height: 32px;  
-}
+}*/
 
 .item__text {
   font-size: 17px;
@@ -86,7 +92,28 @@
 @media(min-width: 768px) {
 
   .page-main__about-us {
-    padding: 55px 50px;
+    padding: 75px 50px;
+  }
+
+  .about-us__title {
+    margin-bottom: 45px;
+  }
+
+  .about-us__list {
+    flex-wrap: wrap;
+    max-height: 490px;
+  }
+
+  .about-us__item {
+    width: 50%;
+
+    margin-bottom: 50px;
+
+    border: 1px dashed grey;
+
+    &:nth-child(3n) {
+      margin: 0;
+    }
   }
 }
 
@@ -95,7 +122,11 @@
 @media(min-width: 1250px) {
 
   .page-main__about-us {
-    padding: 130px 100px 70px;
+    padding: 90px 100px;
+  }
+
+  .about-us__wrapper {
+    padding: 0 175px;
   }
 
 
