@@ -1,0 +1,143 @@
+@lightgrey: #ececec;
+
+.page-main__reviews {
+  position: relative;
+  margin: 0;
+  padding: 0 30px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+
+  & * {
+    margin: 0;
+    padding: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 6px;
+
+    background-image: url(../img/zigzag-line-mobile.png);
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 30px;
+}
+
+.reviews__user {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__user-text {
+  margin-bottom: 25px;
+}
+
+.reviews__user-login {
+  margin-bottom: 30px;
+}
+
+.reviews__user-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+
+  color: #000000;
+}
+
+.reviews__user-mail {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.button__list {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+
+  margin-bottom: 35px;
+  
+  border: 1px solid @lightgrey;
+}
+
+.button__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+}
+
+.item-back {
+  border-right: 0.5px solid @lightgrey;
+}
+
+.item-forward {
+  border-left: 0.5px solid @lightgrey;
+}
+
+.reviews__button-write {
+  width: 100%;
+}
+
+
+
+@media(min-width: 768px) {
+
+  .page-main__reviews {
+    padding: 55px 50px;
+
+    &::after {
+      bottom: -17px;
+      height: 17px;
+
+      background-image: url(../img/zigzag-line-tablet.png);
+      background-size: auto 17px;
+    }
+  }
+}
+
+
+
+@media(min-width: 1250px) {
+
+  .page-main__reviews {
+    padding: 130px 100px 70px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .reviews__wrapper {
+    position: relative;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -93px;
+      left: 0;
+
+      width: 100%;
+      height: 23px;
+      z-index: 10;
+
+      background-image: url(../img/zigzag-line-desktop.png);
+      background-size: auto 23px;
+      background-repeat: repeat-x;
+    }
+  }
+
+}
