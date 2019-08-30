@@ -38,16 +38,16 @@
 .social__list {
   justify-content: space-between;
 
-  padding: 0 60px;
-
-  border-bottom: 1px solid #e5e5e5;
+  width: 145px;
 }
 
 .social__produced {
   justify-content: center;
-
   
   font-weight: bold;
+
+  border-top: 1px solid #e5e5e5;
+
 }
 
 .produced__text {
@@ -60,6 +60,42 @@
 
 
 @media(min-width: 768px) {
+  .page__footer {
+    padding: 0 50px;
+  }
+
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    border: 1px dashed red;
+  }
+
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+
+    width: 110px;
+  }
+
+  .footer__logo,
+  .social__list,
+  .social__produced {
+    display: flex;
+    min-height: 140px;
+
+    border: 1px dashed red;
+  }
+
+  .social__list {
+    justify-self: center;
+  }
+
+  .social__produced {
+    width: 190px;
+  }
+
 
 }
 
