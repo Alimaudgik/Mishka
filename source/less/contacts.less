@@ -1,0 +1,163 @@
+@lightgreen: #62d1ba;
+
+
+.page-main__contacts {
+  margin: 0;
+  padding: 0 30px;
+
+  padding-top: 50px;
+
+/*  background-color: #ffffff;*/
+}
+
+.flag-icon {
+  display: none;
+}
+
+.contacts__wrapper {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 30px;
+}
+
+.contacts__data {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 100%;
+
+  color: #444444;
+
+  border: 1px dashed blue;
+}
+
+.data1 {
+  margin-bottom: 30px;
+}
+
+.contacts__item {
+  display: flex;
+  width: 100%;
+
+  border: 1px dashed red;
+}
+
+.contacts__name {
+  width: 75px;
+
+  line-height: 30px;
+
+}
+
+.contacts__value {
+  line-height: 30px;
+}
+
+.value-link {
+    
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: @lightgreen;
+  }
+
+  &:hover {
+    color: @lightgreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__map {
+  margin: 0;
+  padding: 0;
+  margin-left: -30px;
+
+  width: 320px;
+  height: 460px;
+
+  background-image: url(../img/map-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.write-us__button {
+  margin: 40px 0;
+}
+
+
+
+@media(min-width: 768px) {
+  
+  .page-main__contacts {
+    padding: 0 50px;
+  
+    padding-top: 85px;
+  }
+
+  .flag-icon {
+    position: absolute;
+    right: 45px;
+    top: -15px;
+
+
+    display: block;
+
+    width: 4px;
+    height: 80px;
+
+    background: #000000;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 4px;
+
+      border: 20px solid transparent;
+      border-left: 40px solid @lightgreen;
+    }
+  }
+
+  .contacts__data {
+    flex-flow: row nowrap;
+    width: 100%;
+
+    border: 1px dashed blue;
+  }
+
+  .contacts__item {
+  }
+
+}
+
+
+
+@media(min-width: 1250px) {
+
+}
