@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин MISHKA</title>
+    
+    <link rel="stylesheet" href="css/style.min.css">
+
+  </head>
+  <body class="page-index">
+    
+    <header class="page__header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle toggle-on" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <div class="logo-block">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png" sizes="100vw">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.png" sizes="100vw">
+                  <img class="page-header__logo-image" src="img/logotype-mobile.png" 
+                    width="186" height="35" alt="Магазин Мишка">
+              </picture>
+            </a>
+          </div>
+          
+          <div class="list__wrapper site-list-closed"><!--site-list-closed-->
+            <ul class="main-nav__list main-nav__list--part-1">
+              <li class="main-nav__item">
+                <a class="item__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="item__link" href="#">Вязание на заказ</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list  main-nav__list--part-2">
+              <li class="main-nav__item search-item">
+                <a class="item__link" href="#">Поиск по сайту</span></a>
+              </li>
+              <li class="main-nav__item cart-item">
+                <a class="item__link" href="#">Корзина: <span>пока пуста</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="add-wrapper">
+          <ul class="add-list">
+            <li class="add-list__item desktop-off">
+              <a class="add-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="add-list__item desktop-off">
+              <a class="add-list__link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="add-list__item tablet-off">
+              <a class="add-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="add-list__item tablet-off">
+              <a class="add-list__link" href="#">Распродажа</a>
+            </li>
+            <li class="add-list__item delivery">
+              <a class="add-list__link" href="#">Бесплатная доставка по РБ</a>
+            </li>
+          </ul>
+        </div>
+        <span class="close close-off"></span>
+      </nav>
+    </header>
+
+    <main class="page__main container">
+
+
+    </main>
+
+    <footer class="page__footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo">Стартавая страница</a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a target="blank" class="social__link insta-link" href="https:/instagram.com">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a target="blank" class="social__link fb-link" href="https:/facebook.com">Фейсбук</a>
+          </li>  
+          <li class="social__item">
+            <a target="blank" class="social__link tw-link" href="https:/twitter.com">Твиттер</a>
+          </li>
+        </ul>
+        <div class="social__produced">
+          <a target="blank" class="social__produced--link" href="https:/htmlacademy.ru">
+            <p class="produced__text">Разработано</p>
+            <p class="produced__logo">
+              <img src="img/logo-htmlacademy.png" alt="Логотип Академии" width="27" height="34">
+            </p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+
+  </body>
+</html>
