@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
   </head>
-  <body class="page-index">
+  <body class="page-catalog">
     
     <header class="page__header">
       <nav class="main-nav">
@@ -68,8 +68,74 @@
       </nav>
     </header>
 
-    <main class="page__main container">
+    <main class="page__catalog container">
 
+      <section class="page__catalog--title-block">
+        <div class="title-block__wrapper">
+            <h1 class="catalog__title page__title">Каталог товаров</h1>
+        </div>
+      </section>
+
+      <section class="catalog__list">
+        <article class="catalog__item">
+          <p class="catalog__picture"> 
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/photo-1-deskpot.jpg, img/photo-1-deskpot@2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2.jpg 2x">
+              <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2.jpg 2x" alt="Зайчик" width="260" height="195">
+            </picture>
+          </p>
+          <div class="catalog__product-info">
+            <h3 class="product-info__name">Зайчик-попрыгайчик</h>
+            <p class="product-info__value">Рост 30 см, вес 200 г</p>
+            <p class="product-info__price">1 200 руб.</p>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+            <p class="catalog__picture"> 
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2.jpg 2x">
+                <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2.jpg 2x" alt="Корзинка для белья" width="260" height="195">
+              </picture>
+            </p>
+            <div class="catalog__product-info">
+              <h3 class="product-info__name">Корзинка для белья</h>
+              <p class="product-info__value">Диаметр 15 см, высота 10 см</p>
+              <p class="product-info__price">690 руб.</p>
+            </div>
+          </article>
+
+          <article class="catalog__item">
+              <p class="catalog__picture"> 
+                <picture>
+                  <source media="(min-width: 1250px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2.jpg 2x">
+                  <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2.jpg" alt="Корщзинка для игрушек" width="260" height="195">
+                </picture>
+              </p>
+              <div class="catalog__product-info">
+                <h3 class="product-info__name">Большая корзинка для игрушек</h>
+                <p class="product-info__value">Диаметр 30 см, высота 30 см</p>
+                <p class="product-info__price">1 500 руб.</p>
+              </div>
+            </article>
+
+            <article class="catalog__item">
+                <h3 class="product-info__name">Процесс производства</h>
+                <p class="catalog__picture"> 
+                  <picture>
+                    <source media="(min-width: 1250px)" srcset="img/video-desktop.jpg, img/video-desktop@2.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2.jpg 2x">
+                    <img src="img/video-tablet.jpg" srcset="img/video-tablet@2.jpg 2x" alt="Зайчик" width="260" height="150">
+                  </picture>
+                </p>
+                <p class="product-info__value">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              </article>
+
+              <button type="button" value="Сделать заказ">Сделать заказ</button>
+      </section>
 
     </main>
 
