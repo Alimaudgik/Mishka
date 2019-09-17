@@ -51,6 +51,7 @@ opacity: 0.2;
 
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 
   font-size: 17px;
   line-height: 17px;
@@ -69,6 +70,28 @@ opacity: 0.2;
     flex-grow: 1;
     height: 1px;
     background-color: @turqu;
+  }
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+
+  border: 1px dashed green;
+}
+
+.form__item {
+  width: 100%;
+  margin-bottom: 20px;
+
+  border: 1px dashed blue;
+
+  &:last-child {
+    margin: 0;
   }
 }
 
