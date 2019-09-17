@@ -122,6 +122,13 @@ main {
   } 
 }
 
+.title-block__wrapper {
+  margin: 0;
+  padding: 74px 0;
+
+  background-color: @lightgrey;
+}
+
 .title__blocks {
   font-size: 25px;
   line-height: 30px;
@@ -129,26 +136,37 @@ main {
 
 .page__title {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 30px;
 
   font-size: 27px;
   line-height: 30px;
 
-  width: 245px;
   text-align: center;
-
 }
 
 .page-inside .add-wrapper {
   background-color: @lightgrey;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
 
 
     @media(min-width: 768px) {
 
       body {
         width: 768px;
+      }
+
+      .title-block__wrapper {
+        padding-top: 50px;
+        padding-bottom: 100px;
       }
       
       .title__blocks {
@@ -214,6 +232,7 @@ main {
       .present-block::after {
           background-image: url(../img/border-wave-desk.png);
       }
+
 
       .page__title {
         width: 720px;

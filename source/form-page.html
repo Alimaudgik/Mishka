@@ -18,8 +18,7 @@
               <picture>
                   <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png" sizes="100vw">
                   <source media="(min-width: 768px)" srcset="img/logotype-tablet.png" sizes="100vw">
-                  <img class="page-header__logo-image" src="img/logotype-mobile.png" 
-                    width="186" height="35" alt="Магазин Мишка">
+                  <img class="page-header__logo-image" src="img/logotype-mobile.png" width="186" height="35" alt="Магазин Мишка">
               </picture>
             </a>
           </div>
@@ -36,7 +35,7 @@
 
             <ul class="main-nav__list  main-nav__list--part-2">
               <li class="main-nav__item search-item">
-                <a class="item__link" href="#">Поиск по сайту</span></a>
+                <a class="item__link" href="#">Поиск по сайту</a>
               </li>
               <li class="main-nav__item cart-item">
                 <a class="item__link" href="#">Корзина: <span>пока пуста</span></a>
@@ -68,14 +67,148 @@
       </nav>
     </header>
 
-    <main class="page__catalog container">
+    <main class="page__form container">
 
       <header class="page__form--title-block">
         <div class="title-block__wrapper">
             <h1 class="form__title page__title">Вязание на заказ</h1>
         </div>
       </header>
+      
+      <p class="form__intro-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
+      <form action="" class="form__data">
+
+        <section class="form__type form__block">
+          <fieldset class="form__section">
+            <legend class="form__name">Тип</legend>
+            <ul class="form__list">
+                <li class="form__item">
+                  <label for="interior" class="item__radio-type"><input id="interior" type="radio" name="type" value="type-1" checked>Аксессуар для интерьера</label>
+                </li>
+                <li>
+                  <label for="toy-child" class="item__radio-type"><input id="toy-child" type="radio" name="type" value="type-2">Аксессуар для интерьера</label>
+                </li>
+              </ul>
+          </fieldset>
+        </section>
+     
+        <section class="form__color form__block">
+          <fieldset class="form__section">
+            <legend class="form__name">Цвет</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label for="color-white" class="item__check-color">
+                  <input type="checkbox" id="color-white" name="color-white" value="color-white" checked>Белый
+                </label>
+              </li>
+
+              <li class="form__item">
+                <label for="color-grey" class="item__check-color">
+                  <input type="checkbox" id="color-grey" name="color-white" value="color-white" checked>Серый
+                </label>
+              </li>
+        
+              <li class="form__item">
+                <label for="color-tiff" class="item__check-color">
+                  <input type="checkbox" id="color-tiff" name="color-white" value="color-white">"Тиффани"
+                </label>
+              </li>
+          
+              <li class="form__item">
+                <label for="color-dark" class="item__check-color">
+                  <input type="checkbox" id="color-dark" name="color-white" value="color-white">Черный
+                </label>
+              </li>
+
+              <li class="form__item">
+                <label for="color-pink" class="item__check-color">
+                  <input type="checkbox" id="color-pink" name="color-white" value="color-white">Розовый
+                </label>          
+              </li>
+              
+              <li class="form__item">
+                <label for="color-orange" class="item__check-color">
+                  <input type="checkbox" id="color-orange" name="color-white" value="color-white">Оранжевый
+                </label>                   
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        
+        <section class="form__name-data form__block">
+          <fieldset class="form__section">
+            <legend class="form__name">ФИО</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <p class="form__value">Имя:</p>
+                <input type="text" placeholder="Введите Ваше имя*" minlength="2" maxlength="30">
+              </li>
+              <li class="form__item">
+                <p>Фамилия:</p>
+                <input type="text" placeholder="Укажите фамилию" minlength="2" maxlength="30">
+              </li>
+              <li class="form__item">
+                <p>Отчество:</p>
+                <input type="text" placeholder="Отчество, если желаете" minlength="2" maxlength="30">
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+                
+        <section class="form__contact form__block">
+          <fieldset class="form__section">
+          <ul class="form__list">
+            <li class="form__item">
+              <legend class="form__name">Тел</legend>
+              <input type="text" placeholder="+7 XXX XX XX*" minlength="2" maxlength="30">   
+              <svg class="form__name--logo logo-phone"
+                  xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="8.759mm" height="8.584mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 876 858"  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="__x0023_Layer_x0020_2">
+                  <metadata id="CorelCorpID_0Corel-Layer"/>
+                    <g id="_700142672">
+                    <g>
+                      <g>
+                      <path class="fil0" d="M611 858c-13,0 -26,0 -39,0 -173,-20 -300,-101 -392,-204 -93,-103 -166,-236 -180,-414 0,-16 0,-32 0,-48 3,-32 19,-55 38,-74 23,-24 58,-54 89,-55 23,-1 63,16 79,38 14,19 21,56 27,84 7,28 21,69 17,96 -6,42 -62,60 -79,91 55,131 144,228 264,294 30,-16 56,-66 98,-67 15,0 34,7 50,12 17,5 31,12 46,17 25,9 69,22 84,43 15,22 24,57 21,79 -7,44 -79,92 -121,108z"/>
+                      </g>
+                    </g>
+                    <path class="fil0" d="M442 54c210,0 380,170 380,380l54 0c0,-240 -194,-434 -434,-434l0 54z"/>
+                    <path class="fil0" d="M442 329l0 55c28,0 50,22 50,50l55 0c0,-58 -47,-105 -105,-105z"/>
+                    <path class="fil0" d="M442 220c118,0 214,96 214,214l56 0c0,-149 -121,-270 -270,-270l0 56z"/>
+                    </g>
+                  </g>
+              </svg>
+            </li>
+
+            <li class="form__item">
+              <legend class="form__name">E-mail</legend>
+              <input type="text" placeholder="Ваш Email*" minlength="2" maxlength="30">   
+              <svg class="form__name--logo logo-mail"
+                xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.2888mm" height="11.2888mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1129 1129"  xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="__x0023_Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"/>
+                <path class="fil0" d="M988 176l-847 0c-78,0 -141,63 -141,141l0 459c0,78 63,141 141,141l847 0c78,0 141,-63 141,-141l0 -459c0,-78 -63,-141 -141,-141zm-917 185l0 0 247 185 -247 185 0 -370zm988 414l0 0c0,39 -32,71 -71,71l-847 0c-39,0 -71,-32 -71,-71l276 -207 154 116c19,14 41,21 63,21 22,0 45,-7 63,-21l154 -116 276 207zm0 -44l0 0 -247 -185 247 -185 0 370zm-452 -76l0 0c-12,9 -27,14 -42,14 -15,0 -30,-5 -42,-14l-146 -109 -29 -22 -276 -207 0 0c0,-39 32,-71 71,-71l847 0c39,0 71,32 71,71l-452 339z"/>
+                </g>
+              </svg>
+            </li>
+          </ul>
+          </fieldset>
+
+        </section>
+
+        <section class="form__additional-info form__block">
+          <fieldset class="form__section">
+            <legend class="form__name">Доп</legend>
+            <div class="form__list">
+            <textarea name="" id="" rows="6" maxlength="200" placeholder="Опишите все ваши 
+            пожелания к заказу"></textarea>
+            </div>
+            <p class="">*Поля обязательны для заполнения</p>
+            <button type="submit" class="form__button button" name="Отправить заказ">Отправить заказ</button>
+          </fieldset>
+        </section>
+
+      </form>
 
     </main>
 
