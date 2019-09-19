@@ -80,8 +80,8 @@
       <form action="" class="form__data">
 
         <section class="form__type form__block">
-          <fieldset class="form__section">
-            <legend class="form__name">Тип</legend>
+          <div class="form__section">
+            <h3 class="form__name">Тип</h3>
             <ul class="form__list">
                 <li class="form__item">
                   <input id="interior" type="radio" name="type" value="type-1" checked>
@@ -92,13 +92,13 @@
                   <label for="toy-child" class="item__radio-type">Детская игрушка</label>
                 </li>
               </ul>
-          </fieldset>
+            </div>
         </section>
      
         <section class="form__color form__block">
-          <fieldset class="form__section">
-            <legend class="form__name">Цвет</legend>
-            <ul class="form__list">
+          <div class="form__section">
+            <h3 class="form__name">Цвет</h3>
+            <ul class="form__list form__color">
               <li class="form__item">
                 <input type="checkbox" id="color-white" name="color-white" value="color-white" checked>
                 <label for="color-white" class="item__check-color">Белый</label>
@@ -129,12 +129,12 @@
                 <label for="color-orange" class="item__check-color">Оранжевый</label>                   
               </li>
             </ul>
-          </fieldset>
+          </div>
         </section>
         
         <section class="form__name-data form__block">
-          <fieldset class="form__section">
-            <legend class="form__name">ФИО</legend>
+          <div class="form__section">
+            <h3 class="form__name">ФИО</h3>
             <ul class="form__list">
               <li class="form__item">
                 <p class="form__value">Имя:</p>
@@ -149,14 +149,14 @@
                 <input type="text" placeholder="Отчество, если желаете" minlength="2" maxlength="30">
               </li>
             </ul>
-          </fieldset>
+          </div>
         </section>
                 
         <section class="form__contact form__block">
-          <fieldset class="form__section">
+          <div class="form__section">
           <ul class="form__list">
             <li class="form__item">
-              <legend class="form__name">Тел</legend>
+              <h3 class="form__name">Тел</h3>
               <input type="text" placeholder="+7 XXX XX XX*" minlength="2" maxlength="30">   
               <svg class="form__name--logo logo-phone"
                   xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="8.759mm" height="8.584mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 876 858"  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -177,7 +177,7 @@
             </li>
 
             <li class="form__item">
-              <legend class="form__name">E-mail</legend>
+              <h3 class="form__name">E-mail</h3>
               <input type="text" placeholder="Ваш Email*" minlength="2" maxlength="30">   
               <svg class="form__name--logo logo-mail"
                 xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.2888mm" height="11.2888mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1129 1129"  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -188,20 +188,20 @@
               </svg>
             </li>
           </ul>
-          </fieldset>
+        </div>
 
         </section>
 
         <section class="form__additional-info form__block">
-          <fieldset class="form__section">
-            <legend class="form__name">Доп</legend>
+          <div class="form__section">
+            <h3 class="form__name">Доп</h3>
             <div class="form__list">
             <textarea name="" id="" rows="6" maxlength="200" placeholder="Опишите все ваши 
             пожелания к заказу"></textarea>
             </div>
             <p class="">*Поля обязательны для заполнения</p>
             <button type="submit" class="form__button button" name="Отправить заказ">Отправить заказ</button>
-          </fieldset>
+          </div>
         </section>
 
       </form>
