@@ -177,13 +177,12 @@ opacity: 0.2;
 }
 
 .form__name-data .form__value {
-  margin: 5px 0;
+  border: 1px dashed red;
+  margin: 0;
   padding: 0;
 
   font-size: 17px;
   font-weight: bold;
-  line-height: 18px;
-  box-sizing: border-box;
 }
 
 .form__name-data input,
@@ -197,9 +196,24 @@ opacity: 0.2;
   box-sizing: border-box;
 }
 
+.form__name-data .form__value,
 .form__contact .form__name {
   margin-bottom: 10px;
 }
+
+.form__contact .form__section {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+.form__contact input {
+  color: red;
+}
+
 
 .form__name--logo {
   position: absolute;
@@ -258,8 +272,6 @@ opacity: 0.2;
   justify-content: space-between;
 
   width: 500px;
-
-  border: 1px dashed green;
 }
 
 .form__item {
@@ -304,13 +316,11 @@ opacity: 0.2;
   }
 }
 
-.form__name-data .form__item {
+.form__name-data .form__item,
+.form__contact .form__item {
   flex-direction: row;
 }
 
-.form__name-data .form__list {
-  width: 700px;
-}
 
 .form__name-data .form__value {
   margin: 0;
@@ -320,7 +330,8 @@ opacity: 0.2;
   margin-right: 25px
 }
 
-.form__name-data input {
+.form__name-data input,
+.form__contact input {
   padding-left: 15px;
   font-size: 19px;
 
@@ -333,8 +344,9 @@ opacity: 0.2;
 }
 
 .form__name-data .form__name {
-  height: 55px;
+  height: 49px;
 }
+
 
 
 
@@ -344,7 +356,7 @@ opacity: 0.2;
 
 @media(min-width: 1250px) {
   .form__intro-text {
-    padding: 105px 100px 60px 275px;
+    padding: 105px 100px 0 275px;
 
     width: 680px;
   }
