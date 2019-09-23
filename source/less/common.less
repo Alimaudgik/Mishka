@@ -150,9 +150,15 @@ main {
   background-color: @lightgrey;
 }
 
-input {
+input,
+textarea {
+  font-family: "OpenSans", "Arial", sans-serif;
+
   outline: none;
   background-color: inherit;
+
+  font-size: 17px;
+  line-height: 18px;
     
   &::placeholder {
     font-size: 17px;
@@ -176,6 +182,8 @@ input[type=text]:active {
 textarea {
   resize: none;
   outline: none;
+
+  padding: 17px 18px;
 }
 
 
@@ -238,8 +246,13 @@ textarea {
         }
       }
 
-      input::placeholder {
+      input,
+      textarea {
         font-size: 19px;
+          
+        &::placeholder {
+          font-size: 19px;
+        }
       }
     }
 
