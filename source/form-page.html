@@ -100,32 +100,32 @@
             <h3 class="form__name">Цвет</h3>
             <ul class="form__list form__color">
               <li class="form__item checklist">
-                <input type="checkbox" id="color-white" name="color-white" value="color-white" checked>
+                <input type="checkbox" id="color-white" name="color" value="color" checked>
                 <label for="color-white" class="item__check-color">Белый</label>
               </li>
 
               <li class="form__item checklist">
-                <input type="checkbox" id="color-grey" name="color-white" value="color-white" checked>
+                <input type="checkbox" id="color-grey" name="color" value="color" checked>
                 <label for="color-grey" class="item__check-color">Серый</label>
               </li>
         
               <li class="form__item checklist">
-                <input type="checkbox" id="color-tiff" name="color-white" value="color-white">
+                <input type="checkbox" id="color-tiff" name="color" value="color">
                 <label for="color-tiff" class="item__check-color">"Тиффани"</label>
               </li>
           
               <li class="form__item checklist">
-                <input type="checkbox" id="color-dark" name="color-white" value="color-white">
+                <input type="checkbox" id="color-dark" name="color" value="color">
                 <label for="color-dark" class="item__check-color">Черный</label>
               </li>
 
               <li class="form__item checklist">
-                <input type="checkbox" id="color-pink" name="color-white" value="color-white">
+                <input type="checkbox" id="color-pink" name="color" value="color">
                 <label for="color-pink" class="item__check-color">Розовый</label>          
               </li>
               
               <li class="form__item checklist">
-                <input type="checkbox" id="color-orange" name="color-white" value="color-white">
+                <input type="checkbox" id="color-orange" name="color" value="color">
                 <label for="color-orange" class="item__check-color">Оранжевый</label>                   
               </li>
             </ul>
@@ -208,6 +208,31 @@
 
       </form>
 
+
+      <section class="cart__block">
+          <div class="cart__wrapper">
+            <h1 class="cart__title">Добавить в карзину</h1>
+            <p class="cart__text">Выберете размер:</p>
+            <form class="cart__form size-block">
+              <ul class="size-block__list">
+                <li class="size-block__item">
+                  <input type="radio" id="S" checked name="size" value="size-1">
+                  <label for="S" class="size-block__value">S</label>
+                </li>
+                <li class="size-block__item">
+                  <input type="radio" id="M" name="size" value="size-2">
+                  <label for="M" class="size-block__value">M</label>
+                </li>
+                <li class="size-block__item">
+                  <input type="radio" id="L" name="size" value="size-3">
+                  <label for="L" class="size-block__value">L</label>
+                </li>
+              </ul>
+              <button class="size-block__button button" type="submit" name="size" value="submit" name="Добавить">Добавить</button>
+            </form>
+          </div>
+        </section>
+  
     </main>
 
     <footer class="page__footer">
