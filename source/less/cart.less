@@ -1,5 +1,10 @@
-.cart__block {
-  position: absolute;
+.cart__block-off {
+  display: none
+}
+
+.cart__block-on {
+  display: block;
+  position: fixed;
   top: calc(50% - 133px);
   left: calc(50% - 160px);
 
@@ -12,6 +17,7 @@
   background-color: #ffffff;
 
   box-shadow: 0 10px 10px 0 #c6c6c6;
+  z-index: 20;
 }
 
 .cart__wrapper {
